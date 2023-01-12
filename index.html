@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/styles/index.css">
     <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/indexMediaQuery.css">
     <title>index</title>
 </head>
 
@@ -15,11 +16,18 @@
     <header>
         <div class="container1">
             <div class="title">
-                <img src="./src/assets/title.svg" alt="dot">
-                <img src="./src/assets/Kenzie Empresas.png" alt="">
+                <div class="div-title">
+                    <img class="dot" src="./src/assets/title.svg" alt="dot">
+                    <img src="./src/assets/Kenzie Empresas.png" alt="BurguerButton">
+                </div>
+
+
+                <button class="burguerButton hidden">
+                    <img src="./src/assets/menuOpen.svg" alt="burguer">
+                </button>
             </div>
 
-            <div class="div-buttons">
+            <div class="div-buttons" id="hidden">
                 <button id="login-button" class="defaltbutton1">
                     Login
                 </button>
@@ -31,16 +39,16 @@
 
     </header>
     <main class="container2">
-        <img src="./src/assets/mainImg.svg" alt="mainImg">
-        <div class="sectors">
+        <img class="imgBackground" src="./src/assets/mainImg.svg" alt="mainImg">
+        <div class="sectors" id="sectors">
             <div class="Select-sector">
                 <select>
                     <option value="todos">Selecionar Setor
                 </select>
             </div>
-            <div>
-                <ul class="list">
-                    <!-- <li class="list--item">
+
+            <ul class="list" id="list">
+                <!-- <li class="list--item">
                         <h2>
                             Empresa name
                         </h2>
@@ -51,8 +59,8 @@
                     </li> -->
 
 
-                </ul>
-            </div>
+            </ul>
+
         </div>
     </main>
     <script type="module" src="./src/scripts/index.js"></script>

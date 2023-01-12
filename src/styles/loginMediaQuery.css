@@ -1,0 +1,58 @@
+@media (max-width:768px) {
+    .burguerButton {
+        display: flex;
+        height: 31px;
+        width: 31px;
+        background-color: transparent;
+        border:none;
+        cursor: pointer;
+
+    }
+    .div_title{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .container1{
+        flex-direction: column;
+        gap:20px;
+    }
+    .div-buttons{
+        animation:showup 0.6s ease;
+    }
+
+    header{
+        height:max-content;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    @keyframes showup {
+        0%{
+            opacity: 0;
+            transform: translateY(-150%);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    
+    }
+    .login{
+        max-width: 100%;
+        padding:30px 15px;
+    }
+    .login p{
+        font-size: 16px;
+    }
+    form input{
+        width:100%;
+        max-width: 100%;
+
+    }
+
+    #hidden{
+        display: none;
+    }
+
+
+}
