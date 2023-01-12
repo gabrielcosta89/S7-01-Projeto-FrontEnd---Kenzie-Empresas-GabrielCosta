@@ -1,0 +1,122 @@
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.container1 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.container2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.title {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.div-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBck {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+/* asas */
+.login {
+    height: 489px;
+    width: 506px;
+    position: absolute;
+    toP: 100px;
+    background-color: var(--color-2);
+    padding: 30px 43px;
+    opacity: 95%;
+
+}
+
+.login h1 {
+    font-size: 40px;
+}
+
+.login p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px;
+
+}
+
+form input {
+    padding: 17px;
+    color: var(--color-3);
+    outline: none;
+    font-size: 18px;
+    height: 52px;
+    width: 422px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+}
+
+form select {
+    font-size: 18px;
+    height: 52px;
+    width: 422px;
+    color: #828282;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 10px
+}
+
+.loginButton {
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.or {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+}
+
+.signUpButton {
+    width: 100%;
+}

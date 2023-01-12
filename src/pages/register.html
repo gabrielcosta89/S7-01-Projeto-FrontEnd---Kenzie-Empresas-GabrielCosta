@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/globalStyles.css">
-    <link rel="stylesheet" href="../styles/register.css">
+    <link rel="stylesheet" href="/src/styles/register.css">
     <title>register</title>
 </head>
 
@@ -32,20 +32,27 @@
     </header>
     <main>
         <img class="imgBck" src="../assets/bgdRegister.svg" alt="backgroundMian">
+        
         <div class="cadastrar">
             <h1>Cadastrar-se</h1>
-<form action="">
-    <input type="text" placeholder="Seu nome">
-    <input type="text" placeholder="Seu e-mail">
-    <input type="text" placeholder="Sua senha">
-    <input type="text">
-    <button class="defaltbutton2">
-        Cadastre-se
-    </button>
-</form>  
-<button>
-    Retornar
-</button>
+            <form action="">
+                <input type="text" placeholder="Seu nome">
+                <input type="text" placeholder="Seu e-mail">
+                <input type="text" placeholder="Sua senha">
+                <select name="" id="">
+                    <option value="">Nivel profissional</option>
+                    <option value="junior">Junior</option>
+                    <option value="pleno">Pleno</option>
+                    <option value="senior">Senior</option>
+
+                </select>
+                <button class="defaltbutton2 signupButton">
+                    Cadastre-se
+                </button>
+            </form>
+            <button class="defaltbutton1 returnbutton">
+                Retornar
+            </button>
         </div>
     </main>
 </body>

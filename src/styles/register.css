@@ -47,7 +47,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blue;
 }
 .imgBck {
     object-fit: cover;
@@ -58,16 +57,50 @@ main {
 .cadastrar {
     height: 519px;
     width: 506px;
-    background-color: red;
     position: absolute;
     toP:100px;
     background-color:var(--color-2);
-    /* opacity:90%; */
+    padding:30px 43px;
+    opacity:95%;
 
 }
-
+.cadastrar h1{
+    font-size: 40px;
+    margin-bottom: 20px;;
+}
 
 form{
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    margin-bottom: 10px;
+   
+}
+
+form input{
+    padding:17px;
+    color: var(--color-3);
+    outline: none;
+    font-size: 18px;
+    height: 52px;
+    width: 422px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+   
+}
+
+form select{
+    font-size: 18px;
+    height: 52px;
+    width: 422px;
+    color: #828282;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left:10px
+}
+
+.signupButton{
+    width:100%;
+}
+
+.returnbutton{
+    width:100%;
 }
