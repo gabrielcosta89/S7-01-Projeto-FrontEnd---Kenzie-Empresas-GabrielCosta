@@ -1,0 +1,73 @@
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.container1 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.container2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.title {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.div-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+.imgBck {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+.cadastrar {
+    height: 519px;
+    width: 506px;
+    background-color: red;
+    position: absolute;
+    toP:100px;
+    background-color:var(--color-2);
+    /* opacity:90%; */
+
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
