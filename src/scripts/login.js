@@ -1,6 +1,6 @@
 import { login } from './requests.js'
 import { userLoggedInformation } from './requests.js'
-
+import { validateUser } from './requests.js'
 
 function navigatepages() {
     let homeBt = document.querySelector('#Home-button')
@@ -50,7 +50,7 @@ function showHideButtons() {
 
 showHideButtons()
 
-function loginForm() {
+async function loginForm() {
     const inputs = document.querySelectorAll('form>input')
     const button = document.querySelector('form>button')
     const loginUser = {}
@@ -60,6 +60,7 @@ function loginForm() {
         inputs.forEach((input) => {
             loginUser[input.name] = input.value
         })
+
         let request = await login(loginUser)
         if (request.error) {
             alert(request.error)
@@ -67,8 +68,14 @@ function loginForm() {
         else {
             localStorage.setItem('user', JSON.stringify(request))
             await userLoggedInformation()
-        }
 
+            if (!await validateUser()) {
+                window.location = "/src/pages/userDash.html"
+            }
+            else {
+                window.location = "/src/pages/adm.html"
+            }
+        }
 
     })
 
@@ -77,3 +84,4 @@ function loginForm() {
 }
 
 loginForm()
+

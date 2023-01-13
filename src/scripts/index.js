@@ -115,5 +115,5 @@ function showHideButtons(){
 
 
 }
-
 showHideButtons()
+console.log('hi')

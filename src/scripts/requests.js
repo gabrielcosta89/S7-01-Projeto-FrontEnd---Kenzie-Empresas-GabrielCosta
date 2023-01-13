@@ -47,7 +47,7 @@ function getUser() {
     return user
 }
 
- async function userLoggedInformation() {
+async function userLoggedInformation() {
 
     const user = getUser()
     let { token } = user
@@ -71,13 +71,12 @@ function getUser() {
         .then(response => response.json())
         .then(response => response)
         .catch(err => console.error(err));
-        console.log(await userInformation)
     return userInformation
 }
 await userLoggedInformation()
 
 
-export async function validateUser() {
+async function validateUser() {
     const user = getUser()
     let { token } = user
 
@@ -99,7 +98,6 @@ export async function validateUser() {
     return is_admin
 }
 
-export { login, createUser,userLoggedInformation }
+export { login, createUser, userLoggedInformation, validateUser }
 
 export let AllSectors = await allSectors()
-

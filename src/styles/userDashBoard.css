@@ -3,6 +3,7 @@ header {
     display: flex;
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
 
 }
 
@@ -17,9 +18,11 @@ header {
     padding-right: 20px;
 
 }
+
 .container2 {
     max-width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
@@ -37,5 +40,175 @@ header {
 .information-div {
     height: 121px;
     width: 1180px;
-    background-color: red;
+    padding: 30px 32px 20px 32px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.information-div h1 {
+    font-size: 30px;
+}
+
+.information-div>p {
+    font-size: 22px;
+}
+
+.below {
+    display: flex;
+    justify-content: space-between;
+}
+
+.below button {
+    height: 30;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 30px;
+}
+
+
+.notHired {
+    height: 467px;
+    width: 1178px;
+    background-color: #f8f8f8;
+    border: 1px solid #A8A8A8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notHired p {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.modal-wrapper {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(70, 35, 167, 0.13);
+}
+
+.modal {
+    position: relative;
+    height: 421px;
+    width: 506px;
+    border-radius: 0px;
+    background-color: #ffff;
+    animation: showUp 0.6s ease;
+    padding: 39px 49px;
+}
+
+.modal h1 {
+    font-size: 40px;
+    margin-bottom: 14px;
+}
+
+.ClosButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+form input {
+    padding: 17px;
+    color: var(--color-3);
+    outline: none;
+    font-size: 18px;
+    height: 52px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.defaltbutton2 {
+    width: 100%;
+}
+
+
+#hired {
+    height: 467px;
+    width: 1180px;
+
+}
+
+.hired-top {
+    height: 78px;
+    width: 1178px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hired-top p {
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.hiredBottom {
+    background-color: #F8F8F8;
+    height: 390px;
+    padding: 60px;
+}
+
+.deparment-list{
+    width:100%;
+    height:260px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap:13px;
+    overflow-y: auto;
+}
+
+.deparment-list .card {
+    height: 76px;
+    width:318px;
+    min-width: 318px;
+    border: 1px solid #4200FF;
+    padding: 12px 24px;;
+    background-color: #ffffff;
+}
+
+.card h2 {
+    font-size: 15px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-150%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
