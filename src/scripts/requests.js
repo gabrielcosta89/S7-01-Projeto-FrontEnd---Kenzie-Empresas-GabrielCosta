@@ -49,7 +49,7 @@ function getUser() {
 
 async function userLoggedInformation() {
 
-    const user = getUser()
+    const user = getUser() || {}
     let { token } = user
 
     const options = {
