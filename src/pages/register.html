@@ -43,14 +43,14 @@
         <div class="cadastrar">
             <h1>Cadastrar-se</h1>
             <form action="">
-                <input type="text" placeholder="Seu nome">
-                <input type="text" placeholder="Seu e-mail">
-                <input type="text" placeholder="Sua senha">
-                <select name="" id="">
+                <input name="username" type="text" placeholder="Seu nome" required>
+                <input name="email" type="text" placeholder="Seu e-mail" required>
+                <input name="password" type="text" placeholder="Sua senha" required>
+                <select id="">
                     <option value="">Nivel profissional</option>
-                    <option value="junior">Junior</option>
+                    <option value="júnior">Junior</option>
                     <option value="pleno">Pleno</option>
-                    <option value="senior">Senior</option>
+                    <option value="sênior">Senior</option>
 
                 </select>
                 <button class="defaltbutton2 signupButton">
@@ -62,7 +62,7 @@
             </button>
         </div>
     </main>
-    <script src="../scripts/register.js"></script>
+    <script type="module" src="../scripts/register.js"></script>
 </body>
 
 </html>

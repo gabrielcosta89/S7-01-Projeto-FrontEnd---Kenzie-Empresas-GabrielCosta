@@ -20,7 +20,6 @@ function renderSectors(array) {
     let list = document.querySelector('.list')
     list.innerText = ''
     array.forEach((element) => {
-        // let { sectors } = element
         let card = createCard(element)
         list.appendChild(card)
 
@@ -48,7 +47,6 @@ function createCard({ name, opening_hours, sectors }) {
 
 function createSelectOptions() {
     let selectOption = document.querySelector('select')
-    // selectOption.innerText = ''
     let sectors = []
 
     AllSectors.forEach((element) => {

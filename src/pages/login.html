@@ -48,8 +48,8 @@
                 Preencha os campos para realizar login
             </p>
             <form action="">
-                <input type="text" placeholder="Seu e-mail">
-                <input type="text" placeholder="Sua senha">
+                <input name="email" type="text" placeholder="Seu e-mail" required>
+                <input name="password" type="text" placeholder="Sua senha" required>
                 <button class="defaltbutton2 loginButton">
                     Login </button>
             </form>
@@ -59,7 +59,7 @@
             </button>
         </div>
     </main>
-    <script src="../scripts/login.js"></script>
+    <script type="module" src="../scripts/login.js"></script>
 </body>
 
 </html>

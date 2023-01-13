@@ -1,0 +1,41 @@
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.container1 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.container2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.title {
+    display: flex;
+    gap: 20px;
+}
+
+.information-div {
+    height: 121px;
+    width: 1180px;
+    background-color: red;
+}
