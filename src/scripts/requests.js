@@ -77,7 +77,7 @@ await userLoggedInformation()
 
 
 async function validateUser() {
-    const user = getUser()
+    const user = getUser() || {};
     let { token } = user
 
     const options = {
@@ -98,6 +98,28 @@ async function validateUser() {
     return is_admin
 }
 
-export { login, createUser, userLoggedInformation, validateUser }
+async function uptadeUser(data) {
+
+    const user = getUser() || {};
+    let { token } = user
+
+    const options = {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`
+        },
+        body: JSON.stringify(data)
+    };
+
+    let update = await fetch('http://localhost:6278/users', options)
+        .then(response => response.json())
+        .then(response => response)
+        .catch(err => console.error(err));
+    return update
+}
+
+
+export { login, createUser, userLoggedInformation, validateUser, uptadeUser }
 
 export let AllSectors = await allSectors()

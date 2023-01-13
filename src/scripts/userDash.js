@@ -1,6 +1,5 @@
 import { userLoggedInformation } from '../scripts/requests.js'
-
-
+import { uptadeUser } from '../scripts/requests.js'
 function closeModal() {
     let closeBtn = document.querySelector('.ClosButton')
 
@@ -85,10 +84,37 @@ function logOut() {
 
 
     buttonLogOut.addEventListener('click', () => {
-if(localStorage.getItem('user')){
-    
-}        window.location = "../../index.html"
+        if (localStorage.getItem('user')) {
+
+        } window.location = "../../index.html"
     })
 }
 
+async function editUser() {
+    let inputs = document.querySelectorAll('form>input')
+    let submitBtn = document.querySelector('form>button')
+    let updatedInformation = {}
+
+    
+
+    submitBtn.addEventListener('click', async(event) => {
+        event.preventDefault()
+        inputs.forEach((input) => {
+            
+            if (input.value!=='') {
+
+                updatedInformation[input.name] = input.value
+            }
+
+        })
+        await uptadeUser(updatedInformation)
+        renderTopInformation()
+    })
+
+
+}
+
+
+editUser()
 logOut()
+
