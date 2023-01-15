@@ -120,6 +120,45 @@ async function uptadeUser(data) {
 }
 
 
-export { login, createUser, userLoggedInformation, validateUser, uptadeUser }
+async function deleteUser(id) {
+    const user = getUser() || {};
+    let { token } = user
+
+    const options = {
+        method: 'DELETE',
+        headers: {
+            Authorization: `Bearer ${token}`
+        },
+    };
+
+    fetch(`http://localhost:6278/admin/delete_user/${id}`, options)
+        .catch(err => console.error(err));
+}
+
+
+// async function allDepartments() {
+
+//     const user = getUser() || {};
+//     let { token } = user
+// console.log(token)
+//     const options = {
+//         method: 'GET',
+//         headers: {
+//             'Content-Type': 'application/json',
+//             Authorization: `Bearer ${token}`
+//         },
+//     };
+
+//     let departments = await fetch('http://localhost:6278/departments', options)
+//         .then(response => response.json())
+//         .then(response => response)
+//         .catch(err => console.error(err));
+
+//         return departments[0].companies
+// }
+// console.log(await allDepartments())
+
+
+export { login, createUser, userLoggedInformation, validateUser, uptadeUser, deleteUser }
 
 export let AllSectors = await allSectors()

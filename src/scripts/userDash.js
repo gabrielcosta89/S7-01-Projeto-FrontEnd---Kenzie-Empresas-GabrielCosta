@@ -80,7 +80,7 @@ async function renderTopInformation() {
 renderTopInformation()
 
 function logOut() {
-    let buttonLogOut = document.querySelector('.defaltbutton1')
+    let buttonLogOut = document.querySelector('.container1 .defaltbutton1')
 
 
     buttonLogOut.addEventListener('click', () => {

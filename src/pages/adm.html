@@ -1,14 +1,209 @@
 <!--Dashboard de administrador-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/admBoard.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>ADM PAGE</h1>
+    <header>
+        <div class="container1">
+            <div class="title">
+                <img src="/../src/assets/title.svg" alt="dot">
+                <img class='title' src="/../src/assets/Kenzie Empresas.png" alt="title">
+            </div>
+
+            <button id="logOutButton" class="defaltbutton1">
+                Logout
+            </button>
+        </div>
+
+    </header>
+    <main class="container2">
+        <section class="Departments">
+            <div class="department-top">
+                <h1>Departamentos</h1>
+                <select name="" id="">
+                    <option value="" name="todos">Selectionar Empresa</option>
+                    <option value="" name="empresa2">Empresa 2</option>
+                    <option value="" name="empresa3">Empresa 3</option>
+                </select>
+
+                <button class="createButton defaltbutton2">
+                    <img src="../assets/plus.svg" alt="">
+                    <p>Criar</p>
+                </button>
+
+
+            </div>
+
+            <ul class="department-list">
+                <li class="department-card">
+                    <h2>Department name</h2>
+                    <p class="dpName">
+                        Department description
+                    </p>
+                    <p class="cpName">
+                        company name
+                    </p>
+                    <div class="wrapper">
+                        <div class="icons">
+                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
+                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="department-card">
+                    <h2>Department name</h2>
+                    <p class="dpName">
+                        Department description
+                    </p>
+                    <p class="cpName">
+                        company name
+                    </p>
+                    <div class="wrapper">
+                        <div class="icons">
+                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
+                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="department-card">
+                    <h2>Department name</h2>
+                    <p class="dpName">
+                        Department description
+                    </p>
+                    <p class="cpName">
+                        company name
+                    </p>
+                    <div class="wrapper">
+                        <div class="icons">
+                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
+                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="department-card">
+                    <h2>Department name</h2>
+                    <p class="dpName">
+                        Department description
+                    </p>
+                    <p class="cpName">
+                        company name
+                    </p>
+                    <div class="wrapper">
+                        <div class="icons">
+                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
+                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="department-card">
+                    <h2>Department name</h2>
+                    <p class="dpName">
+                        Department description
+                    </p>
+                    <p class="cpName">
+                        company name
+                    </p>
+                    <div class="wrapper">
+                        <div class="icons">
+                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
+                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="department-card">
+                    <h2>Department name</h2>
+                    <p class="dpName">
+                        Department description
+                    </p>
+                    <p class="cpName">
+                        company name
+                    </p>
+                    <div class="wrapper">
+                        <div class="icons">
+                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
+                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
+                        </div>
+
+                    </div>
+
+                </li>
+                <li class="department-card">
+                    <h2>Department name</h2>
+                    <p class="dpName">
+                        Department description
+                    </p>
+                    <p class="cpName">
+                        company name
+                    </p>
+                    <div class="wrapper">
+                        <div class="icons">
+                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
+                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
+                        </div>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section class="users">
+            <h1>Usuários cadastrados</h1>
+
+            <ul class="user-list">
+                <!-- <li class="user-card">
+                    <h2>Username</h2>
+                    <p class="position">Pleno</p>
+                    <p class="companyName">Company Name</p>
+
+                    <div class="wrapper">
+                        <div class="icons1">
+                            <img src="../assets/caneta.svg" alt="purple caneta">
+                            <img class="trashDeleteUser" id="" src="../assets/trash.svg" alt="trash">
+
+                        </div>
+                    </div>
+                </li> -->
+
+            </ul>
+        </section>
+<div class="showModalhERE">
+    <!-- <div class="modal-delete-wrapper">
+        <div class="modal-delete-user">
+            <h2>
+                Realmente deseja remover o usuário NOME?
+            </h2>
+            <button class="closeButtonDeleteUser"><img src="../assets/closeButton.svg" alt="close button"></button>
+
+            <button class="defaltbutton3 deleteButton">Deletar</button>
+        </div>
+    </div> -->
+</div>
+
+    </main>
+
+    <script type="module" src="../scripts/admDash.js"></script>
 </body>
+
 </html>

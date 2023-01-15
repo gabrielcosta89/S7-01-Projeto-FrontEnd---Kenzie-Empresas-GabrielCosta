@@ -95,7 +95,6 @@ function showHideButtons(){
     let buttonClick=document.querySelector('.burguerButton')
     let divButtons=document.querySelector('.div-buttons')
     let img=document.querySelector('.burguerButton img')
-    console.log(img)
 
     buttonClick.addEventListener('click',()=>{
         if(img.alt=='burguer'){
@@ -116,4 +115,3 @@ function showHideButtons(){
 
 }
 showHideButtons()
-console.log('hi')

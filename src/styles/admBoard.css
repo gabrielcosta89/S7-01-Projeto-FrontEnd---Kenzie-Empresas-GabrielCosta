@@ -1,0 +1,269 @@
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+
+}
+
+.container1 {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.container2 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+
+.title {
+    display: flex;
+    gap: 20px;
+}
+
+.Departments {
+    width: 100%;
+    margin-bottom: 80px;
+
+}
+
+.department-top {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.department-top>h1 {
+    font-size: 30px;
+}
+
+.department-top>select {
+    height: 32px;
+    width: 282px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+
+}
+
+.createButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.createButton img {
+    position: relative;
+    right: 25px;
+}
+
+.department-list {
+    height: 385px;
+    width: 100%;
+    background: #F8F8F8;
+    padding: 32px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+
+
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    height: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-1);
+    border-radius: 10px;
+}
+
+.department-card {
+    height: 196px;
+    min-width: 462px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    padding: 21px;
+    border-bottom: 1px solid var(--color-1);
+}
+
+.department-card h2 {
+    font-size: 20px;
+}
+
+.dpName {
+    font-size: 18px;
+}
+
+.cpName {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    height: 48px;
+    width: 146px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.icons>img {
+    cursor: pointer;
+}
+
+.users>h1 {
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.users {
+    width: 100%;
+}
+
+.user-list {
+    height: 385px;
+    width: 100%;
+    background: #F8F8F8;
+    padding: 32px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+
+}
+
+
+.user-card {
+    height: 196px;
+    min-width: 462px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    padding: 21px;
+    border-bottom: 1px solid var(--color-1);
+}
+
+.user-card h2 {
+    font-size: 20px;
+}
+
+.position {
+    font-size: 18px;
+}
+
+.companyName {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.icons1 {
+    height: 48px;
+    width: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons1 img {
+    cursor: pointer;
+}
+
+.modal-delete-wrapper {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(70, 35, 167, 0.13);
+}
+
+.modal-delete-user {
+    height: 292px;
+    width: 733px;
+    background-color: #FFFFFF;
+    position: relative;
+
+    padding: 70px 157px 56px 157px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: showup 0.6s ease;
+}
+
+.modal-delete-user h2 {
+    text-align: center;
+    font-size: 28px;
+    
+}
+.closeButtonDeleteUser{
+    height:31px;
+    width:31px;
+    top:20px;
+    right:20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position:absolute;
+}
+
+.deleteButton {
+    width: 100%;
+}
+
+@keyframes showup {
+    0%{
+        opacity: 0;
+        transform: translateY(-150%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+}
