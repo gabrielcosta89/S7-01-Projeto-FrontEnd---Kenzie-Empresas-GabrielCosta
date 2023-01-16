@@ -56,9 +56,9 @@ function createSelectOptions() {
     })
 
     sectors.forEach((sector) => {
-        let option=document.createElement('option')
-        option.value=sector
-        option.innerText=`${sector}`
+        let option = document.createElement('option')
+        option.value = sector
+        option.innerText = `${sector}`
 
         selectOption.appendChild(option)
     })
@@ -91,23 +91,23 @@ function selectSector() {
 
 selectSector()
 
-function showHideButtons(){
-    let buttonClick=document.querySelector('.burguerButton')
-    let divButtons=document.querySelector('.div-buttons')
-    let img=document.querySelector('.burguerButton img')
+function showHideButtons() {
+    let buttonClick = document.querySelector('.burguerButton')
+    let divButtons = document.querySelector('.div-buttons')
+    let img = document.querySelector('.burguerButton img')
 
-    buttonClick.addEventListener('click',()=>{
-        if(img.alt=='burguer'){
-            img.src='./src/assets/menuClosed.svg'
-            img.alt='closed'
+    buttonClick.addEventListener('click', () => {
+        if (img.alt == 'burguer') {
+            img.src = './src/assets/menuClosed.svg'
+            img.alt = 'closed'
 
-            divButtons.removeAttribute('id','hidden')
-     
+            divButtons.removeAttribute('id', 'hidden')
+
         }
-        else{
-            img.src='./src/assets/menuOpen.svg'
-            img.alt='burguer'
-            divButtons.setAttribute('id','hidden')
+        else {
+            img.src = './src/assets/menuOpen.svg'
+            img.alt = 'burguer'
+            divButtons.setAttribute('id', 'hidden')
         }
     })
 

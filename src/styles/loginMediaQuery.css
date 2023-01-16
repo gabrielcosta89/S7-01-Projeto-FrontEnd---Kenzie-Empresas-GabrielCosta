@@ -4,53 +4,61 @@
         height: 31px;
         width: 31px;
         background-color: transparent;
-        border:none;
+        border: none;
         cursor: pointer;
 
     }
-    .div_title{
+
+    .div_title {
         display: flex;
         justify-content: space-between;
         width: 100%;
     }
-    .container1{
+
+    .container1 {
         flex-direction: column;
-        gap:20px;
-    }
-    .div-buttons{
-        animation:showup 0.6s ease;
+        gap: 20px;
     }
 
-    header{
-        height:max-content;
-        padding-top:20px;
-        padding-bottom:20px;
+    .div-buttons {
+        animation: showup 0.6s ease;
     }
+
+    header {
+        height: max-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     @keyframes showup {
-        0%{
+        0% {
             opacity: 0;
             transform: translateY(-150%);
         }
-        100%{
+
+        100% {
             opacity: 1;
             transform: translateY(0%);
         }
-    
+
     }
-    .login{
+
+    .login {
         max-width: 100%;
-        padding:30px 15px;
+        padding: 30px 15px;
     }
-    .login p{
+
+    .login p {
         font-size: 16px;
     }
-    form input{
-        width:100%;
+
+    form input {
+        width: 100%;
         max-width: 100%;
 
     }
 
-    #hidden{
+    #hidden {
         display: none;
     }
 

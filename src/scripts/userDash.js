@@ -95,13 +95,13 @@ async function editUser() {
     let submitBtn = document.querySelector('form>button')
     let updatedInformation = {}
 
-    
 
-    submitBtn.addEventListener('click', async(event) => {
+
+    submitBtn.addEventListener('click', async (event) => {
         event.preventDefault()
         inputs.forEach((input) => {
-            
-            if (input.value!=='') {
+
+            if (input.value !== '') {
 
                 updatedInformation[input.name] = input.value
             }

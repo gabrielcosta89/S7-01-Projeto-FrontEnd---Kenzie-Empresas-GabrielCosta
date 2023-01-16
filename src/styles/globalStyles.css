@@ -34,43 +34,46 @@ body {
     cursor: pointer;
 
 }
+
 .defaltbutton2 {
     height: 48px;
     width: 142px;
     font-size: 18px;
-    border:none;
+    border: none;
     color: var(--color-2);
     background-color: var(--color-1);
     font-weight: bold;
     cursor: pointer;
 
 }
+
 .defaltbutton3 {
     height: 48px;
     width: 142px;
     font-size: 18px;
-    border:none;
+    border: none;
     color: var(--color-2);
     background-color: var(--color-5);
     font-weight: bold;
     cursor: pointer;
 
 }
+
 .defaltbutton4 {
     height: 48px;
     width: 142px;
     font-size: 18px;
-    border:1px solid var(--color-4);
+    border: 1px solid var(--color-4);
     color: var(--color-4);
     background-color: var(--color-2);
     font-weight: bold;
-    cursor:pointer
-
+    cursor: pointer
 }
 
 .hidden {
     display: none;
 }
+
 #hidden {
     display: none;
 }

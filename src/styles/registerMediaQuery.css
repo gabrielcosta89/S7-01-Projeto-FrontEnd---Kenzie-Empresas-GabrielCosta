@@ -33,13 +33,16 @@
     .cadastrar {
         max-width: 100%;
     }
-    .cadastrar h1{
+
+    .cadastrar h1 {
         font-size: 32px;
     }
+
     form input {
         width: 100%;
     }
-    form select{
+
+    form select {
         width: 100%;
 
     }

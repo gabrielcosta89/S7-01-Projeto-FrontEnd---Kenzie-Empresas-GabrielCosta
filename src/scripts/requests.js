@@ -119,6 +119,25 @@ async function uptadeUser(data) {
     return update
 }
 
+async function updateAnyUser(data, userId) {
+
+    const user = getUser() || {};
+    let { token } = user
+
+    const options = {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`
+        },
+        body: JSON.stringify(data)
+    };
+
+    await fetch(`http://localhost:6278/admin/update_user/${userId}`, options)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err));
+}
 
 async function deleteUser(id) {
     const user = getUser() || {};
@@ -136,29 +155,124 @@ async function deleteUser(id) {
 }
 
 
-// async function allDepartments() {
+async function allDepartments() {
 
-//     const user = getUser() || {};
-//     let { token } = user
-// console.log(token)
-//     const options = {
-//         method: 'GET',
-//         headers: {
-//             'Content-Type': 'application/json',
-//             Authorization: `Bearer ${token}`
-//         },
-//     };
+    const user = getUser() || {};
+    let { token } = user
 
-//     let departments = await fetch('http://localhost:6278/departments', options)
-//         .then(response => response.json())
-//         .then(response => response)
-//         .catch(err => console.error(err));
+    const options = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`
+        },
+    };
 
-//         return departments[0].companies
-// }
-// console.log(await allDepartments())
+    let departments = await fetch('http://localhost:6278/departments', options)
+        .then(response => response.json())
+        .then(response => response)
+        .catch(err => console.error(err));
+
+    return departments
+}
+
+async function allCompanies() {
+
+    const options = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    };
+
+    let allCompanies = await fetch('http://localhost:6278/companies/', options)
+        .then(response => response.json())
+        .then(response => response)
+        .catch(err => console.error(err));
+
+    return allCompanies
+}
 
 
-export { login, createUser, userLoggedInformation, validateUser, uptadeUser, deleteUser }
+async function departmentsOfCompany(companyId) {
+    const user = getUser() || {};
+    let { token } = user
+
+    const options = {
+        method: 'GET',
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    };
+
+    let departments = await fetch(`http://localhost:6278/departments/${companyId}`, options)
+        .then(response => response.json())
+        .then(response => response)
+        .catch(err => console.error(err));
+
+    return departments
+}
+
+
+async function excludeDepartment(departmentId) {
+    const user = getUser() || {};
+    let { token } = user
+
+    const options = {
+        method: 'DELETE',
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    };
+    await fetch(`http://localhost:6278/departments/${departmentId}`, options)
+        .then(response => response.json())
+        .then(response => response)
+        .catch(err => console.error(err));
+}
+
+async function editDepartment(data,id){
+    const user = getUser() || {};
+    let { token } = user
+
+    const options = {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}` 
+        },
+        body: JSON.stringify(data)
+      };
+      
+     let newDp=  await fetch(`http://localhost:6278/departments/${id}`, options)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err));
+
+        return newDp
+}
+
+async function createDepartment(data){
+    const user = getUser() || {};
+    let { token } = user
+
+    const options = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`
+        },
+        body: JSON.stringify(data)
+      };
+      
+     let updatedDepartment=await  fetch('http://localhost:6278/departments', options)
+        .then(response => response.json())
+        .then(response =>response)
+        .catch(err => console.error(err));
+       
+    
+}
+
+
+export { login, createUser, userLoggedInformation, validateUser, uptadeUser, deleteUser, updateAnyUser, allDepartments, allCompanies, departmentsOfCompany, excludeDepartment,editDepartment,createDepartment }
 
 export let AllSectors = await allSectors()

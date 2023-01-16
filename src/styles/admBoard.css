@@ -213,7 +213,7 @@ header {
 
 .modal-delete-wrapper {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -239,29 +239,258 @@ header {
 .modal-delete-user h2 {
     text-align: center;
     font-size: 28px;
-    
+
 }
-.closeButtonDeleteUser{
-    height:31px;
-    width:31px;
-    top:20px;
-    right:20px;
+
+.closeButtonDeleteUser {
+    height: 31px;
+    width: 31px;
+    top: 20px;
+    right: 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
 }
 
 .deleteButton {
     width: 100%;
 }
 
+.modal-edit-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(70, 35, 167, 0.13);
+}
+
+.modal-edit-user {
+    height: 342px;
+    width: 506px;
+    background-color: #ffffff;
+    padding: 39px 41px 50px 42px;
+    position: relative;
+    animation: showup 0.6s ease;
+
+}
+
+.modal-edit-user h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.editUserCloseButton {
+    height: 31px;
+    width: 31px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.editUserForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.editUserForm select {
+    font-size: 17px;
+    font-weight: 400;
+    height: 52px;
+    width: 422px;
+    color: #828282;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.editUserForm button {
+    width: 100%;
+}
+
+.modal-exclude-department-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(70, 35, 167, 0.13);
+}
+
+.modal-edit-department-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(70, 35, 167, 0.13);
+}
+
+.modal-exclude-department {
+    height: 342px;
+    width: 733px;
+    background-color: #FFFFFF;
+    position: relative;
+
+    padding: 70px 67px 56px 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: showup 0.6s ease;
+}
+
+.modal-edit-department {
+    height: 330px;
+    ;
+    width: 506px;
+    ;
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 39px 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: showup 0.6s ease;
+
+
+}
+
+.modal-edit-department h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.modal-edit-department .closeDpEdit {
+    width: 31px;
+    height: 31px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    outline: none;
+}
+
+.modal-edit-department textarea {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    font-family: var(--default-font);
+    font-size: 17px;
+}
+
+
+.editDpButton {
+    display: block;
+    width: 100%;
+    height: 38px;
+}
+
+
+.modal-exclude-department h2 {
+    text-align: center;
+    font-size: 28px;
+    height: 120px;
+    width: 598px;
+    padding: 0 110px;
+
+}
+
+
+.modal-create-department-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(70, 35, 167, 0.13);
+}
+
+.modal-create-department {
+    height: 402px;
+    width: 506px;
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 39px 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: showup 0.6s ease;
+}
+
+.modal-create-department h2 {
+    font-size: 36px;
+}
+
+.createDepartmentBt {
+    width: 100%;
+}
+
+.createForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.createForm>input {
+    height: 52px;
+    width: 422px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 17px;
+    padding: 17px;
+    outline: none;
+}
+
+.createForm>select {
+    height: 52px;
+    width: 422px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: #989898;
+    font-size: 17px;
+    padding: 5px 17px;
+
+}
+
+.closeBtDepartment {
+    width: 31px;
+    height: 31px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
 @keyframes showup {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(-150%);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateY(0%);
     }

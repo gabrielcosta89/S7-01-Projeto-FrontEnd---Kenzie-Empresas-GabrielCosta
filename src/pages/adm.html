@@ -29,10 +29,9 @@
         <section class="Departments">
             <div class="department-top">
                 <h1>Departamentos</h1>
-                <select name="" id="">
-                    <option value="" name="todos">Selectionar Empresa</option>
-                    <option value="" name="empresa2">Empresa 2</option>
-                    <option value="" name="empresa3">Empresa 3</option>
+                <select class="selectCompany" name="" id="">
+                    <option value="todos">Selectionar Empresa</option>
+
                 </select>
 
                 <button class="createButton defaltbutton2">
@@ -44,125 +43,6 @@
             </div>
 
             <ul class="department-list">
-                <li class="department-card">
-                    <h2>Department name</h2>
-                    <p class="dpName">
-                        Department description
-                    </p>
-                    <p class="cpName">
-                        company name
-                    </p>
-                    <div class="wrapper">
-                        <div class="icons">
-                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
-                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
-                        </div>
-
-                    </div>
-
-                </li>
-                <li class="department-card">
-                    <h2>Department name</h2>
-                    <p class="dpName">
-                        Department description
-                    </p>
-                    <p class="cpName">
-                        company name
-                    </p>
-                    <div class="wrapper">
-                        <div class="icons">
-                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
-                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
-                        </div>
-
-                    </div>
-
-                </li>
-                <li class="department-card">
-                    <h2>Department name</h2>
-                    <p class="dpName">
-                        Department description
-                    </p>
-                    <p class="cpName">
-                        company name
-                    </p>
-                    <div class="wrapper">
-                        <div class="icons">
-                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
-                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
-                        </div>
-
-                    </div>
-
-                </li>
-                <li class="department-card">
-                    <h2>Department name</h2>
-                    <p class="dpName">
-                        Department description
-                    </p>
-                    <p class="cpName">
-                        company name
-                    </p>
-                    <div class="wrapper">
-                        <div class="icons">
-                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
-                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
-                        </div>
-
-                    </div>
-
-                </li>
-                <li class="department-card">
-                    <h2>Department name</h2>
-                    <p class="dpName">
-                        Department description
-                    </p>
-                    <p class="cpName">
-                        company name
-                    </p>
-                    <div class="wrapper">
-                        <div class="icons">
-                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
-                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
-                        </div>
-
-                    </div>
-
-                </li>
-                <li class="department-card">
-                    <h2>Department name</h2>
-                    <p class="dpName">
-                        Department description
-                    </p>
-                    <p class="cpName">
-                        company name
-                    </p>
-                    <div class="wrapper">
-                        <div class="icons">
-                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
-                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
-                        </div>
-
-                    </div>
-
-                </li>
-                <li class="department-card">
-                    <h2>Department name</h2>
-                    <p class="dpName">
-                        Department description
-                    </p>
-                    <p class="cpName">
-                        company name
-                    </p>
-                    <div class="wrapper">
-                        <div class="icons">
-                            <img src="../assets/eye.svg" alt="eye"><img src="../assets/lapisPreto.svg"
-                                alt="lapis preto"><img src="../assets/trash.svg" alt="trash">
-                        </div>
-
-                    </div>
-
-                </li>
 
             </ul>
 
@@ -172,34 +52,35 @@
             <h1>Usuários cadastrados</h1>
 
             <ul class="user-list">
-                <!-- <li class="user-card">
-                    <h2>Username</h2>
-                    <p class="position">Pleno</p>
-                    <p class="companyName">Company Name</p>
-
-                    <div class="wrapper">
-                        <div class="icons1">
-                            <img src="../assets/caneta.svg" alt="purple caneta">
-                            <img class="trashDeleteUser" id="" src="../assets/trash.svg" alt="trash">
-
-                        </div>
-                    </div>
-                </li> -->
 
             </ul>
         </section>
-<div class="showModalhERE">
-    <!-- <div class="modal-delete-wrapper">
-        <div class="modal-delete-user">
-            <h2>
-                Realmente deseja remover o usuário NOME?
-            </h2>
-            <button class="closeButtonDeleteUser"><img src="../assets/closeButton.svg" alt="close button"></button>
 
-            <button class="defaltbutton3 deleteButton">Deletar</button>
+        <div class="showModalhERE">
+
+            <div class="modal-create-department-wrapper" id="hidden">
+                <div class="modal-create-department">
+                    <h2>
+                        Criar Departamento
+                    </h2>
+                    <button class="closeBtDepartment">
+                        <img src="../assets/closeButton.svg" alt="close button">
+                    </button>
+                    <form class="createForm">
+                        <input id="nameDepartment" type="text" name="name" placeholder="Nome do departamento" required>
+                        <input id="DescriptionDp" type="text" name="description" placeholder="Descrição" required>
+                        <select name="" id="" required>
+                            <option value="">Selecionar empresa</option>
+                        </select>
+                        <button class="defaltbutton2 createDepartmentBt">Criar departamento</button>
+                    </form>
+
+                </div>
+            </div>
+
+
+
         </div>
-    </div> -->
-</div>
 
     </main>
 
